@@ -1,0 +1,35 @@
+@media only screen and (max-width: 767px) {
+
+	/*------- Timeline CSS Starts -------*/
+
+.bg-timeline { padding: 15px 15px 0; }
+.timeline-listing:after,
+.timeline-circle { display: none; }
+.left-timeline-content,
+.right-timeline-content { float: none; width: 100%; }
+.timeline-content > h3 { font-size: 1.8rem; }
+.timeline-content > p { font-size: 1.4rem; text-align: justify; }
+
+	/*------- Timeline CSS Ends -------*/
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	/*------- Timeline CSS Starts -------*/
+
+.bg-timeline { padding: 30px 15px; }
+
+	/*------- Timeline CSS Ends -------*/
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+	/*------- Timeline CSS Starts -------*/
+
+.bg-timeline { padding: 30px 15px; }
+
+	/*------- Timeline CSS Ends -------*/
+
+}

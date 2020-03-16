@@ -1,0 +1,73 @@
+/*------- Font Family Starts -------*/
+
+@font-face { font-family: "Barlow-Regular"; src: url("../fonts/Barlow-Regular.otf"); }
+@font-face { font-family: "Barlow-Medium"; src: url("../fonts/Barlow-Medium.otf"); }
+
+/*------- Font Family Ends -------*/
+
+/*------- Reset CSS Starts -------*/
+
+html { letter-spacing: 0.5px; }
+ul,
+h3,
+p { margin: 0; padding: 0; }
+li { list-style: none; }
+
+/*------- Reset CSS Ends -------*/
+
+/*------- Timeline CSS Starts -------*/
+
+.bg-timeline { padding: 50px 15px; }
+.timeline-listing { position: relative; }
+.timeline-listing:after {
+	background-color: #00a0af;
+	content: "";
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	top: 0;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	width: 2px;
+}
+.timeline-listing > li { position: relative; }
+.timeline-listing > li:before,
+.timeline-listing > li:after { content: ""; clear: both; display: block; width: 100%; }
+.left-timeline-content { float: left; width: 45%; }
+.right-timeline-content { float: right; width: 45%; }
+.timeline-content > h3 { color: #00a0af; font: 2.4rem/1.42857143 "Barlow-Medium"; margin-bottom: 15px; padding-bottom: 15px; position: relative; }
+.timeline-content > h3:after {
+	background-color: #00a0af;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	left: 0;
+	position: absolute;
+	width: 50px;
+}
+.timeline-content > p { color: #000; font: 1.6rem/1.42857143 "Barlow-Regular"; margin-bottom: 15px; }
+.timeline-circle { 
+	background-color: #00a0af;
+	border: 7px solid #fff;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	height: 50px; 
+	left: 50%; 
+	position: absolute; 
+	top: 0; 
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	width: 50px;
+	z-index: 1;
+}
+
+/*------- Timeline CSS Ends -------*/
