@@ -3,6 +3,7 @@
 	/*------- Timeline CSS Starts -------*/
 
 .bg-timeline { padding: 15px 15px 0; }
+.timeline-heading > h1 { font-size: 2.4rem; margin-bottom: 30px; padding-bottom: 15px; }
 .timeline-listing:after,
 .timeline-circle { display: none; }
 .left-timeline-content,
@@ -19,6 +20,7 @@
 	/*------- Timeline CSS Starts -------*/
 
 .bg-timeline { padding: 30px 15px; }
+.timeline-heading > h1 { font-size: 3rem; }
 
 	/*------- Timeline CSS Ends -------*/
 

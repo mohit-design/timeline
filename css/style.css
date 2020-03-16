@@ -9,6 +9,7 @@
 
 html { letter-spacing: 0.5px; }
 ul,
+h1,
 h3,
 p { margin: 0; padding: 0; }
 li { list-style: none; }
@@ -18,6 +19,27 @@ li { list-style: none; }
 /*------- Timeline CSS Starts -------*/
 
 .bg-timeline { padding: 50px 15px; }
+.timeline-heading > h1 { border-bottom: 2px solid #00a0af; color: #00a0af; display: inline-block; font: 3.6rem/1.42857143 "Barlow-Medium"; margin-bottom: 50px; padding-bottom: 30px; position: relative; }
+.timeline-heading > h1:after {
+	background-color: #fff;
+	border: 2px solid #00a0af;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	content: "";
+	height: 20px;
+	left: 50%;
+	position: absolute;
+	top: 100%;
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	-moz-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	-o-transform: translate(-50%,-50%);
+	width: 20px;
+}
 .timeline-listing { position: relative; }
 .timeline-listing:after {
 	background-color: #00a0af;
