@@ -23,21 +23,21 @@ li { list-style: none; }
 .timeline-heading > h1:after {
 	background-color: #fff;
 	border: 2px solid #00a0af;
-	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
+	border-radius: 50%;
 	content: "";
 	height: 20px;
 	left: 50%;
 	position: absolute;
 	top: 100%;
-	transform: translate(-50%,-50%);
 	-webkit-transform: translate(-50%,-50%);
 	-moz-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
 	-o-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
 	width: 20px;
 }
 .timeline-listing { position: relative; }
@@ -48,11 +48,11 @@ li { list-style: none; }
 	left: 50%;
 	position: absolute;
 	top: 0;
-	transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 	width: 2px;
 }
 .timeline-listing > li { position: relative; }
@@ -61,7 +61,20 @@ li { list-style: none; }
 .left-timeline-content { float: left; width: 45%; }
 .right-timeline-content { float: right; width: 45%; }
 .timeline-content > h3 { color: #00a0af; font: 2.4rem/1.42857143 "Barlow-Medium"; margin-bottom: 15px; padding-bottom: 15px; position: relative; }
-.timeline-content > h3:after {
+.left-timeline-content > h3,
+.left-timeline-content > p { text-align: right; }
+.left-timeline-content > h3:after {
+	background-color: #00a0af;
+	bottom: 0;
+	content: "";
+	height: 2px;
+	position: absolute;
+	right: 0;
+	width: 50px;
+}
+.right-timeline-content > h3,
+.right-timeline-content > p { text-align: left; }
+.right-timeline-content > h3:after {
 	background-color: #00a0af;
 	bottom: 0;
 	content: "";
@@ -74,20 +87,20 @@ li { list-style: none; }
 .timeline-circle { 
 	background-color: #00a0af;
 	border: 7px solid #fff;
-	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	-o-border-radius: 50%;
+	border-radius: 50%;
 	height: 50px; 
 	left: 50%; 
 	position: absolute; 
-	top: 0; 
-	transform: translateX(-50%);
+	top: 0;
 	-webkit-transform: translateX(-50%);
 	-moz-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
 	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 	width: 50px;
 	z-index: 1;
 }

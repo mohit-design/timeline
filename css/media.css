@@ -9,6 +9,8 @@
 .left-timeline-content,
 .right-timeline-content { float: none; width: 100%; }
 .timeline-content > h3 { font-size: 1.8rem; }
+.left-timeline-content > h3 { text-align: left; }
+.left-timeline-content > h3:after { left: 0; right: auto; }
 .timeline-content > p { font-size: 1.4rem; text-align: justify; }
 
 	/*------- Timeline CSS Ends -------*/
